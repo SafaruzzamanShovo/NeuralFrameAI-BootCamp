@@ -1,5 +1,5 @@
 # Assalamualaikum 
-# Simple Calculator that can do only addition and substraction 
+# Simple Calculator that can do addition, substraction, multiplication and division 
 
 # Function to add two numbers
 def add(num1, num2):
