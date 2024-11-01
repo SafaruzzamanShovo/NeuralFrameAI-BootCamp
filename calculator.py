@@ -1,5 +1,5 @@
 # Assalamualaikum 
-# Simple Calculator that can do only addition and substraction 
+# Simple Calculator that can do addition, substraction, multiplication and division 
 
 # Function to add two numbers
 def add(num1, num2):
@@ -9,15 +9,24 @@ def add(num1, num2):
 def subtract(num1, num2):
     return num1 - num2
 
+# Function to multiply two numbers
+def multiply(num1, num2):
+    return num1 * num2
+
+# Function to divide two numbers
+def divide(num1, num2):
+    return num1 / num2
 
 
 print("Please select operation -\n" \
         "1. Add\n" \
-        "2. Subtract\n")
+        "2. Subtract\n" \
+        "3. Multiply\n" \
+        "4. Divide\n")
 
 
 # Taking input from the user
-select = int(input("Select operations form 1, 2 :"))
+select = int(input("Select operations form 1, 2, 3, 4 :"))
 
 number_1 = int(input("Enter first number: "))
 number_2 = int(input("Enter second number: "))
@@ -30,5 +39,12 @@ elif select == 2:
     print(number_1, "-", number_2, "=",
                     subtract(number_1, number_2))
 
+elif select == 3:
+    print(number_1, "*", number_2, "=",
+                    multiply(number_1, number_2))
+
+elif select == 4:
+    print(number_1, "/", number_2, "=",
+                    divide(number_1, number_2))
 else:
     print("Invalid input")
